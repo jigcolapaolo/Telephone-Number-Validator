@@ -1,0 +1,179 @@
+/* FUENTE (GOOGLE) */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* -------------VARIABLES-------------- */
+:root {
+    --hue: 290;
+    --first-color: hsl(var(--hue), 52% , 48%);
+    --first-color-alt: hsl(var(--hue), 56%, 35%);
+    --title-color: hsl(228, 8%, 95%);
+    --text-color: hsl(228, 8%, 65%);
+    --body-color: hsl(228, 15%, 20%);
+    --container-color: hsl(228, 15%, 15%);
+  
+    /* FUENTE Y TAMAÑOS */
+    --body-font: "Varela Round", serif;
+    --bigger-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+  
+    /* FONT WEIGHT */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  }
+
+/* ------------RESET-------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+button {
+    /* QUITO BORDES DE INPUTS Y BOTONES */
+    outline: none;
+    border: none;
+}
+
+body,
+button,
+textarea,
+input {
+    /* FUENTE Y TAMAÑO */
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    /* COLORES */
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,h4 {
+    /* ESTILOS HEADINGS */
+    color: var(--title-color);
+    font-weight: var(--font-medium)
+}
+
+/* CLASES */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.title-box {
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    border-radius: 50rem;
+    box-shadow: 0px 0px 30px -11px var(--first-color);
+    width: 300px;
+    text-align: center;
+}
+
+.phone-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    border-radius: 1rem;
+    width: 300px;
+    background-color: black;
+}
+
+.camera {
+    width: 10px;
+    height: 10px;
+    background-color: var(--title-color);
+    border-radius: 50rem;
+}
+
+.validator-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--title-color);
+    width: 270px;
+    height: 270px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.validator-box label {
+    text-align: center;
+    color: black;
+}
+
+#user-input {
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+    border: 1px solid gray
+}
+
+#results-div {
+    color: black;
+    padding-top: 0.4rem;
+    height: 180px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--container-color) var(--text-color);
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.button-box {
+    display: flex;
+    gap: 4rem; 
+}
+
+#check-btn, #clear-btn {
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+#check-btn:hover, #clear-btn:hover {
+    background-color: var(--first-color);
+}
+
+#check-btn:active, #clear-btn:active {
+    background-color: var(--first-color-alt);
+}
+
